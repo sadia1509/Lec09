@@ -1,0 +1,9 @@
+test_case_no,description,url,http_method,header_params,query_params,request_body,response_status,expected_response_body,validation,environment
+Case 1,Login success verification,https://reqres.in/api/login,POST,Content-Type: application/json,username: ${sample_user_name},"{
+    ""email"": ""eve.holt@reqres.in"",
+    ""password"": ""cityslicka""
+}",200,{"token":"QpwL5tke4Pnpja7X4"},,"test, prod, dev"
+Case 2,Login Failed verification,https://reqres.in/api/login,POST,Content-Type: application/json,username: ${sample_user_name},"{
+    ""email"": ""abcd@reqres.in"",
+    ""password"": ""cityslicka""
+}",400,{"error":"user not found"},,"dev, prod"

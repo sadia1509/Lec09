@@ -1,0 +1,4 @@
+test_case_no,description,ignore,url,endpoint,http_method,header_params,query_params,response_status,validation,environment
+Case 1,Login success verification,TRUE,https://reqres.in/api,/users,GET,Content-Type: application/json,,200,,"dev,test"
+Case 2,Login Failed verification,FALSE,https://reqres.in/api,/users/2,GET,Content-Type: application/json,,200,,prod
+Case 3,Login Failed verification,FALSE,https://reqres.in/api,/users/null,GET,Content-Type: application/json,,404,,test

@@ -1,0 +1,6 @@
+test_case_no,description,url,http_method,header_params,response_status,validation,environment
+Case 1,Check  if id == 2,https://reqres.in/api/users/2,GET,Content-Type: application/json,200,"data.id == 2, exist data.first_name
+datatype data.id Integer","prod, test, dev"
+Case 2,Check company param availability,https://reqres.in/api/users/2,GET,Content-Type: application/json,200,exist   data.id,test
+Case 3,Check company param datatype,https://reqres.in/api/users/2,GET,Content-Type: application/json,200,"datatype data.email   String  , datatype data.id Integer",dev
+Case 4,Check company param datatype,https://reqres.in/api/users/2,GET,Content-Type: application/json,200,exist data.email,prod

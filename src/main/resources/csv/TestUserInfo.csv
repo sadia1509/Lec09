@@ -1,0 +1,4 @@
+test_case_no,description,url,endpoint,http_method,header_params,query_params,response_status,validation,environment
+Case 1,All users,https://reqres.in/api,/users,GET,Content-Type: application/json,,200,,"test, dev, prod"
+Case 2,Specific user,https://reqres.in/api,/users/2,GET,Content-Type: application/json,,200,,"prod, dev"
+Case 3,Invalid user,https://reqres.in/api,/users/null,GET,Content-Type: application/json,,404,,test
